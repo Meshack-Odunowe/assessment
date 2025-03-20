@@ -27,7 +27,7 @@ const ATMDashboard = ({
   currencySymbol = "₦",
   showDetailButton = true,
 }) => {
-  // Helper component for status cards to avoid repetition
+  
   interface StatusCardProps {
     title: string;
     data: Array<{ name: string; value: number; color: string }>;
