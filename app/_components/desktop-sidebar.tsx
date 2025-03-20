@@ -34,10 +34,10 @@ const DesktopSideNav = () => {
       icon: "operations.png",
       path: "/operations",
       subMenus: [
-        { name: "Cash Request", path: "/operations/cash-request" },
-        { name: "Mutilated Notes", path: "/operations/mutilated-notes" },
-        { name: "Cash Evacuation", path: "/operations/cash-evacuation" },
-        { name: "Overages / Shortages", path: "/operations/overages-shortages" },
+        { name: "Cash Request", path: "/cash-request" },
+        { name: "Mutilated Notes", path: "/mutilated-notes" },
+        { name: "Cash Evacuation", path: "/cash-evacuation" },
+        { name: "Overages / Shortages", path: "/overages-shortages" },
       ],
     },
     {
@@ -92,7 +92,7 @@ const DesktopSideNav = () => {
   };
 
   return (
-    <aside className="hidden w-[270px] md:block h-screen bg-[#F5F5F5] fixed left-0 top-0 overflow-y-auto mt-[69px]">
+    <aside className="hidden w-[270px] md:block overflow-scroll  bg-[#F5F5F5] fixed left-0 top-0 overflow-y-auto mt-[69px]">
       <div className="flex flex-col h-full items-center w-full gap-[19.5px] pt-[50px] ">
         <nav>
           {menuItems.map((menuItem, index) => (
@@ -102,7 +102,7 @@ const DesktopSideNav = () => {
                 <button 
                   className={cn(
                     "flex w-full px-[40px] cursor-pointer rounded-r-full",
-                    isPathActive(menuItem.path) ? "bg-white" : "hover:bg-white rounded-r-full py-[16px]"
+                    isPathActive(menuItem.path) ? "bg-white rounded-r-full py-[16px]" : "hover:bg-white rounded-r-full py-[16px]"
                   )}
                   onClick={() => toggleSubMenu(menuItem.name)}
                   aria-expanded={openSubMenu === menuItem.name}
@@ -120,7 +120,7 @@ const DesktopSideNav = () => {
                   href={menuItem.path}
                   className={cn(
                     "flex rounded-r-full px-[40px] cursor-pointer rounded-md",
-                    isPathActive(menuItem.path) ? "bg-white" : "hover:bg-white rounded-r-full py-[16px]"
+                    isPathActive(menuItem.path) ? "bg-white rounded-r-full py-[16px]" : "hover:bg-white rounded-r-full py-[16px]"
                   )}
                 >
                   <div className="w-6 h-6 mr-[10px] flex">
@@ -148,7 +148,7 @@ const DesktopSideNav = () => {
                     href={subMenuItem.path}
                     className={cn(
                       "flex w-full pl-[28px] py-[16px] text-[#757575] text-[14px] rounded-r-full cursor-pointer",
-                      pathname === subMenuItem.path ? "bg-white" : "hover:bg-white"
+                      pathname === subMenuItem.path ? "bg-white rounded-r-full py-[16px]" : "hover:bg-white rounded-r-full py-[16px]"
                     )}
                   >
                     {subMenuItem.name}
