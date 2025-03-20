@@ -4,11 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import { Bell, Menu } from 'lucide-react';
 
-interface NavbarProps {
-  toggleSidebar: () => void;
-}
+// interface NavbarProps {
+//   toggleSidebar: () => void;
+// }
 
-const Navbar = ({ toggleSidebar }: NavbarProps) => {
+const Navbar = () => {
   return (
     <header className=" py-[11px] bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-10">
       <div className="flex items-center justify-between h-full px-4">
@@ -16,7 +16,7 @@ const Navbar = ({ toggleSidebar }: NavbarProps) => {
           {/* Hamburger menu */}
           <button 
             className="p-2 py-[11px] rounded-[15px] bg-[#F5F5F5] hover:bg-gray-100 mr-4" 
-            onClick={toggleSidebar}
+            // onClick={toggleSidebar}
             aria-label="Toggle sidebar"
           >
             <Menu className="size-[48px] text-gray-600" />

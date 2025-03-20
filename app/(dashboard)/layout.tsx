@@ -15,12 +15,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const handleToggleSidebar = () => {
+  
+  // };
+
   return (
     <html lang="en">
       <body
         className={`     `}
       >
-        <Navbar/>
+        <Navbar
+          // toggleSidebar={handleToggleSidebar}
+        />
         <SideNav />
         <DesktopSideNav/>
         {children}
