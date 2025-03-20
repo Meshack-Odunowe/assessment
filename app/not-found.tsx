@@ -20,7 +20,7 @@ export default function NotFound() {
             The <span className="font-medium text-indigo-500">{pageName}</span> page is not yet available.
           </p>
           <p className="text-gray-500 mt-2">
-            We're working on it and it will be coming soon!
+            We&apos;re working on it and it will be coming soon!
           </p>
         </div>
         <Link 
