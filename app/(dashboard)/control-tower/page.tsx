@@ -1,6 +1,6 @@
 
 import ControlTower from '@/app/_components/control-tower'
-import Card from '@/app/_components/operation-card'
+
 import React from 'react'
 
 const OperationsHeadDashboard = () => {

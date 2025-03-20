@@ -117,8 +117,8 @@ const ResetPassword: React.FC = () => {
             </span>
           </p>
           <p className="text-[13px] text-[#555555] mt-[24px]">
-            Use at least 8 characters. Don't use a password from another site,
-            or something obvious like: pet's name, phone number, or birthdate.
+            Use at least 8 characters. Don&apos;t use a password from another site,
+            or something obvious like: pet&apos;s name, phone number, or birthdate.
           </p>
         </div>
 

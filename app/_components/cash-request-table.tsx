@@ -9,9 +9,8 @@ import {
   getPaginationRowModel,
   getFilteredRowModel,
   SortingState,
-  ColumnDef
+
 } from '@tanstack/react-table';
-import { format } from 'date-fns';
 
 // Define the data type for our table
 type CashRequest = {
@@ -78,10 +77,10 @@ const sampleData: CashRequest[] = [
 const CashRequestTable: React.FC = () => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
-  const [dateRange, setDateRange] = useState({
-    start: new Date('2022-08-06'),
-    end: new Date('2022-08-13')
-  });
+  // const [dateRange, setDateRange] = useState({
+  //   start: new Date('2022-08-06'),
+  //   end: new Date('2022-08-13')
+  // });
 
   const columnHelper = createColumnHelper<CashRequest>();
 

@@ -5,7 +5,6 @@ import CashPositionCard from "./cash-position";
 import BranchInfoCard from "./branch-info-card";
 import Card from "./operation-card";
 import ATMDashboard from "./atm-dashboard";
-import CashGauge from "./cash-gauge";
 
 const ControlTower = () => {
    const cardData = [
