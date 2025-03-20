@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`  pl-[270px] ml-[28px] pt-[64px]`}
+        className={`     `}
       >
         <Navbar/>
         <SideNav />

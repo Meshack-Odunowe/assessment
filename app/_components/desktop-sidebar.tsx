@@ -92,7 +92,7 @@ const DesktopSideNav = () => {
   };
 
   return (
-    <aside className="hidden md:block h-screen bg-[#F5F5F5] fixed left-0 top-0 overflow-y-auto mt-[69px]">
+    <aside className="hidden w-[270px] md:block h-screen bg-[#F5F5F5] fixed left-0 top-0 overflow-y-auto mt-[69px]">
       <div className="flex flex-col h-full items-center w-full gap-[19.5px] pt-[50px] ">
         <nav>
           {menuItems.map((menuItem, index) => (
