@@ -70,7 +70,7 @@ const ResetPassword: React.FC = () => {
         
         {/* Confirm Password */}
         <div className="mb-4">
-          <label htmlFor="confirm-password" className="block text-[16px] font-[400] text-[#353535] mb-2">
+          <label htmlFor="confirm-password" className="block text-[14px] font-[400] text-[#555555] mb-2">
             New Password
           </label>
           <div className="relative">
@@ -90,8 +90,8 @@ const ResetPassword: React.FC = () => {
         
         {/* Password Strength */}
         <div className="mb-4">
-          <p className="text-[16px] font-[400] text-[#353535]">
-            Password Strength: <span className={`font-medium ${passwordStrength === 'Weak' ? 'text-[#F6515B]' : passwordStrength === 'Medium' ? 'text-yellow-500' : 'text-green-500'}`}>{passwordStrength}</span>
+          <p className="text-[16px] font-[700]  text-[#353535]">
+            Password Strength: <span className={`font-medium ${passwordStrength === 'Weak' ? 'text-[#F6515B] font-[700]' : passwordStrength === 'Medium' ? 'text-yellow-500' : 'text-green-500'}`}>{passwordStrength}</span>
           </p>
           <p className="text-[13px] text-[#555555] mt-[24px]">
             Use at least 8 characters. Don't use a password from another site, or something obvious like: pet's name, phone number, or birthdate.
