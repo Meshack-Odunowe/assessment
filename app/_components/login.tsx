@@ -29,7 +29,7 @@ export default function LoginForm() {
         </div>
         
         <div className="rounded-lg bg-white p-8 shadow-md">
-          <h1 className="mb-6  text-2xl text-[#052B4E] font-bold text-gray-800 ">Log In</h1>
+          <h1 className="mb-6  text-2xl text-[#052B4E] font-bold  ">Log In</h1>
           
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
