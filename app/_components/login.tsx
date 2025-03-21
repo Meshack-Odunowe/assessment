@@ -11,7 +11,6 @@ export default function LoginForm() {
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle authentication logic here
     console.log('Login attempt with:', { username });
   };
 
@@ -94,7 +93,7 @@ export default function LoginForm() {
             
             <button
               type="submit"
-              className="w-full  rounded-[15px] bg-[#055DAE] py-[12px] px-[172px] text-center font-medium text-white hover:bg-[#022546] focus:outline-none focus:ring-2 focus:ring-[#055DAE] focus:ring-offset-2"
+              className="w-full  rounded-[15px] bg-[#055DAE] py-[12px]  text-center font-medium text-white hover:bg-[#022546] focus:outline-none focus:ring-2 focus:ring-[#055DAE] focus:ring-offset-2"
             >
               Log In
             </button>
