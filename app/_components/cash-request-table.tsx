@@ -188,9 +188,9 @@ const CashRequestTable: React.FC = () => {
   });
 
   return (
-    <div className="bg-[#F5F5F5] pl-[275px] pt-[150px] rounded-lg shadow">
+    <div className="bg-[#F5F5F5] lg:pl-[275px] pt-[150px] rounded-lg shadow">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b">
+      <div className="flex flex-col lg:flex-row justify-between items-center p-4 border-b w-full">
         <h1 className="text-[36px] font-bold text-[#052B4E]">Cash Request</h1>
         <div className="flex gap-4">
           <button className="flex items-center bg-white rounded-[15px] gap-2 px-3 py-2 text-gray-700 border ">
@@ -238,7 +238,7 @@ const CashRequestTable: React.FC = () => {
       
       {/* Table */}
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
+        <table className="min-w-full  px-4 divide-y divide-gray-200">
           <thead className="bg-gray-50">
             {table.getHeaderGroups().map(headerGroup => (
               <tr key={headerGroup.id}>
