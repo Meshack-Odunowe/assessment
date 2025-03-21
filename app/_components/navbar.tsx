@@ -15,11 +15,11 @@ const Navbar = () => {
         <div className="flex items-center">
           {/* Hamburger menu */}
           <button 
-            className="p-2 py-[11px] rounded-[15px] bg-[#F5F5F5] hover:bg-gray-100 mr-4" 
+            className="p-[12px] rounded-[15px] bg-[#F5F5F5] hover:bg-gray-100 mr-4" 
             // onClick={toggleSidebar}
             aria-label="Toggle sidebar"
           >
-            <Menu className="size-[48px] text-gray-600" />
+            <Menu className="size-[24px] text-gray-600" />
           </button>
           
           {/* Logo */}
@@ -46,7 +46,7 @@ const Navbar = () => {
         
         <div className="flex items-center">
           {/* Notification icon */}
-          <button className="p-[12px] rounded-[15px] bg-[#F5F5F5] hover:bg-gray-100 relative mr-[40px]">
+          <button className="p-[12px] rounded-[15px] bg-[#F5F5F5] hover:bg-gray-100 relative mr-[22px]">
             <Image src='/chat.svg' width={24} height={22} alt='chat icon' className="w-5 h-5 text-gray-600 " />
             <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
           </button>
