@@ -50,8 +50,12 @@ const ResetPassword: React.FC = () => {
 
       {/* Card */}
       <div
-        className="bg-white rounded-[15px] shadow shadow-[0px_5px_40px_0px_rgba(0,0,0,0.1)];
-] max-w-[480px]  p-[40px] w-fit ">
+        className="bg-white rounded-[15px] ;
+] max-w-[480px]  p-[40px] w-fit "  style={{ 
+  boxShadow: "0px 5px 40px 0px rgba(0, 0, 0, 0.1)",
+  padding: "40px",
+  borderRadius: "8px" 
+}}>
         <h1 className="text-[32px] font-bold text-[#052B4E] mb-[24px]">
           Reset Password
         </h1>
@@ -129,7 +133,7 @@ const ResetPassword: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <div className="mt-8 text-center text-sm text-gray-500">
+      <div className="mt-[84px] text-center text-sm text-gray-500">
         <div className="flex justify-center gap-6 mb-[24px]">
           <Link
             href="#"
