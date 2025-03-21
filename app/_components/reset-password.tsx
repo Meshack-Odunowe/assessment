@@ -1,4 +1,3 @@
-// ResetPassword.tsx
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -43,15 +42,15 @@ const ResetPassword: React.FC = () => {
         <Image
           src="/logo.png"
           alt="Cash Complete Logo"
-          width={150}
-          height={60}
+          width={120}
+          height={70}
           priority
         />
       </div>
 
       {/* Card */}
       <div
-        className="bg-white rounded-[15px] shadow-md shadow-[box-shadow: 0px 5px 40px 0px #0000001A;
+        className="bg-white rounded-[15px] shadow shadow-[0px_5px_40px_0px_rgba(0,0,0,0.1)];
 ] max-w-[480px]  p-[40px] w-fit ">
         <h1 className="text-[32px] font-bold text-[#052B4E] mb-[24px]">
           Reset Password
@@ -61,14 +60,14 @@ const ResetPassword: React.FC = () => {
         <div className="mb-4">
           <label
             htmlFor="new-password"
-            className="block text-[14px] font-[400] text-[#555555] mb-2">
+            className="block text-[14px] font-[700] text-[#555555] mb-[10px]">
             New Password
           </label>
           <div className="relative">
             <input
               id="new-password"
               type="password"
-              className="w-full border border-gray-300 rounded p-3 pl-10"
+              className="w-full border placeholder:text-[14px] placeholder:font-[400] border-gray-300 rounded p-3 pl-10"
               placeholder="Create a new password"
               value={password}
               onChange={handlePasswordChange}
@@ -83,14 +82,14 @@ const ResetPassword: React.FC = () => {
         <div className="mb-4">
           <label
             htmlFor="confirm-password"
-            className="block text-[14px] font-[400] text-[#555555] mb-2">
+            className="block text-[14px] font-[700] text-[#555555] mb-[10px]">
             New Password
           </label>
           <div className="relative">
             <input
               id="confirm-password"
               type="password"
-              className="w-full border border-gray-300 rounded p-3 pl-10"
+              className="w-full border placeholder:text-[14px] placeholder:font-[400] border-gray-300 rounded p-3 pl-10"
               placeholder="Create a new password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
@@ -103,7 +102,7 @@ const ResetPassword: React.FC = () => {
 
         {/* Password Strength */}
         <div className="mb-4">
-          <p className="text-[16px] font-[700]  text-[#353535]">
+          <p className="text-[14px] font-[700]  text-[#353535]">
             Password Strength:{" "}
             <span
               className={`font-medium ${
@@ -117,8 +116,9 @@ const ResetPassword: React.FC = () => {
             </span>
           </p>
           <p className="text-[13px] text-[#555555] mt-[24px]">
-            Use at least 8 characters. Don&apos;t use a password from another site,
-            or something obvious like: pet&apos;s name, phone number, or birthdate.
+            Use at least 8 characters. Don&apos;t use a password from another
+            site, or something obvious like: pet&apos;s name, phone number, or
+            birthdate.
           </p>
         </div>
 
