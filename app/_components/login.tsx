@@ -21,8 +21,8 @@ export default function LoginForm() {
           <Image 
             src="/logo.png" 
             alt="Cash Complete Logo" 
-            width={150} 
-            height={60}
+            width={120} 
+            height={70}
             priority
           />
         </div>
