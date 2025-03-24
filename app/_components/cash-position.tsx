@@ -1,3 +1,4 @@
+import { Progress } from "@/components/ui/progress";
 import Image from "next/image";
 import React from "react";
 
@@ -36,27 +37,34 @@ const CashPositionCard: React.FC<CashPositionCardProps> = ({
             </div>
           </div>
           <div>
+            <div>
+
             <span className="text-[#959595] text-[14px]">Cash Position</span>
             <div className="font-[800] text-[22px] text-[#353535] mb-2">
               {cashPosition}
             </div>
+            <div><Progress/></div>
             <div className="flex items-center">
+
               <span
                 style={{ color: isPositive ? "#098A16" : "#FF0000" }}
                 className="mr-2 font-medium"
               >
                 {isPositive ? "▲" : "▼"} {Math.abs(changePercentage)}%
               </span>
+
               <span className="text-gray-500 text-sm">{changeDescription}</span>
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
 
       {/* Bottom section with two cards */}
-      <div className="flex gap-3">
+      <div className="flex justify-between gap-3">
         <div
-          className="p-3 text-white font-medium text-center rounded-[10px]"
+          className="p-3 text-white font-medium  w-full text-center rounded-[10px]"
           style={{ backgroundColor: "#055DAE" }}
         >
           <div className="text-[12px] mb-[2px]">Vault Balance</div>
@@ -64,11 +72,11 @@ const CashPositionCard: React.FC<CashPositionCardProps> = ({
         </div>
 
         <div
-          className="flex-1 p-3 text-gray-700 font-medium text-center rounded-lg border"
+          className=" p-3 text-gray-700 font-medium w-full text-center rounded-[10px] border"
           style={{ borderColor: "#E9EEFC" }}
         >
-          <div className="text-[12px] mb-[2px]">Teller Till Balance</div>
-          <div className="font-bold">{tellerTillBalance}</div>
+          <div className="text-[12px] text-[#959595] rounded-[10px] font-[400] mb-[2px]">Teller Till Balance</div>
+          <div className="font-[500] text-[16px]">{tellerTillBalance}</div>
         </div>
       </div>
     </div>

@@ -23,15 +23,15 @@ const ControlTower = () => {
     ];
   
   return (
-    <div className="min-h-screen bg-[#F5F5F5]">
-      <div className="pl-[28px] pt-[64px] pr-[28px]">
+    <div className="min-h-screen mx-[24px]   bg-[#F5F5F5]">
+      <div className=" pt-[64px] ">
         <div className="mb-6">
           <h2 className="text-[36px] font-[700] text-gray-800">
             Control Tower
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:flex gap-[13px] w-full">
           {/* Branch Information Card */}
           <div className="h-full">
             <BranchInfoCard
@@ -61,15 +61,15 @@ const ControlTower = () => {
         </div>
       </div>
       <div>
-        <h5 className=" ml-[24px] mt-[32px] mb-[16px] font-[800] text-[20px]">Operation Action</h5>
+        <h5 className="  mt-[32px] mb-[16px] font-[800] text-[20px]">Operation Action</h5>
         
-      <div className="flex gap-4 p-6 flex-wrap">
+      <div className="grid lg:grid-cols-5 gap-4 mx-auto">
       {cardData.map((item, index) => (
         <Card key={index} title={item.title} amount={item.amount} />
       ))}
     </div>
       </div>
-      <div className="p-6 flex items-end">
+      <div className="pt-6 flex items-end">
       <ATMDashboard 
       balance="₦420,000,000,000" 
       currencySymbol="$"
