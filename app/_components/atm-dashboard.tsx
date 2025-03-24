@@ -73,13 +73,13 @@ const ATMDashboard = ({
   );
 
   return (
-    <div className=" flex gap-[19px]">
+    <div className=" flex flex-col mx-auto justify-center items-center lg:flex-row gap-[19px]">
       <div className="bg-white rounded-[10px] shadow-md p-6 " style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
         <h2 className="text-[20px] font-[500] mb-[8px]">Current ATM Balance</h2>
 
         <div className="text-[32px] font-bold mb-6">{balance}</div>
 
-        <div className="flex flex-wrap gap-4 justify-between text-sm mb-6">
+        <div className="flex flex-col lg:flex-row flex-wrap gap-4 justify-between text-sm mb-6">
           <div>
             <div className="text-[#000000] font-[400] text-[12px]">
               Today&apos;s Withdrawal
@@ -115,7 +115,7 @@ const ATMDashboard = ({
           )}
         </div>
 
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 flex-wrap">
           <StatusCard title="ATM Status" data={atmStatusData} />
           <StatusCard title="Cash Status" data={cashStatusData} />
         </div>
