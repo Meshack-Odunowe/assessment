@@ -21,7 +21,7 @@ const BranchInfoCard: React.FC<BranchInfoCardProps> = ({
   return (
     <div className="flex flex-col ">
       {/* Header section with branch name and tier */}
-      <div className="py-[16px] flex items-center bg-[#DBDFFD] gap-[16px] rounded-t-[10px]">
+      <div className="py-[16px] flex items-center bg-[#DBDFFD] gap-[16px] rounded-t-[10px]" style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
         <Image
           src={imageUrl}
           width={90}
@@ -36,7 +36,7 @@ const BranchInfoCard: React.FC<BranchInfoCardProps> = ({
       </div>
       
       {/* Details section */}
-      <div className="bg-white py-[16px] flex-grow rounded-b-[10px] shadow-sm">
+      <div className="bg-white py-[16px] flex-grow rounded-b-[10px] " style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
         <div className="px-[24px] flex justify-between mb-4">
           <div>
             <h3 className="text-[#959595] text-[13px] font-[400]">
