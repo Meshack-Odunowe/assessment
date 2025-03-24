@@ -77,7 +77,7 @@ const FinancialCard: React.FC<FinancialCardProps> = ({
 
 const FinancialSummaryCards: React.FC = () => {
   return (
-    <div className=" min-w-[416px] flex flex-col gap-[16px] py-[12px]">
+    <div className="  flex flex-col gap-[16px] py-[12px]">
       <FinancialCard
         title="Cash Withdrawal"
         amount="117,420,000"

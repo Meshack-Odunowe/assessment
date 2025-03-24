@@ -31,7 +31,7 @@ const ControlTower = () => {
           </h2>
         </div>
 
-        <div className="flex  flex-col lg:flex-row min-h-[258px] gap-[13px] ">
+        <div className="flex  flex-col lg:flex-row  gap-[13px] ">
           {/* Branch Information Card */}
           <div className="h-full">
             <BranchInfoCard
