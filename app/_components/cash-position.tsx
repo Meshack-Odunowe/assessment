@@ -19,7 +19,7 @@ const CashPositionCard: React.FC<CashPositionCardProps> = ({
   const isPositive = changePercentage >= 0;
 
   return (
-    <div className="bg-white rounded-lg p-[20px] shadow-sm w-full ">
+    <div className="bg-white rounded-[10px] p-[20px]  w-full " style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
       {/* Top section with rounded corners */}
       <div
         className="p-4 mb-4 relative"
