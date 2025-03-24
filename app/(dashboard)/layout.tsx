@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`     `}
+        className={` min-h-screen    `}
       >
         <Navbar
           // toggleSidebar={handleToggleSidebar}

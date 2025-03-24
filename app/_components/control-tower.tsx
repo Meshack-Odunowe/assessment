@@ -5,6 +5,7 @@ import CashPositionCard from "./cash-position";
 import BranchInfoCard from "./branch-info-card";
 import Card from "./operation-card";
 import ATMDashboard from "./atm-dashboard";
+import RequestStatusDashboard from "./request-status-dashboard";
 
 const ControlTower = () => {
    const cardData = [
@@ -77,7 +78,11 @@ const ControlTower = () => {
     />
        
       
-    </div>
+      </div>
+      <div>
+
+      <RequestStatusDashboard />
+      </div>
     </div>
   );
 };

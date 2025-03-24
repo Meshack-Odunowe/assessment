@@ -11,24 +11,9 @@ import {
   SortingState,
 
 } from '@tanstack/react-table';
+import { CashRequest } from '@/types';
 
-// Define the data type for our table
-type CashRequest = {
-  id: string;
-  initiator: {
-    name: string;
-    code: string;
-  };
-  fromBranch: string;
-  toBranch: string;
-  date: Date;
-  amount: number;
-  currency: {
-    name: string;
-    code: string;
-  };
-  status: 'Fulfilled' | 'Unfulfilled' | 'Pending';
-};
+
 
 
 const sampleData: CashRequest[] = [
@@ -188,7 +173,7 @@ const CashRequestTable: React.FC = () => {
   });
 
   return (
-    <div className="bg-[#F5F5F5] lg:pl-[275px] pt-[150px] rounded-lg shadow">
+    <div className="bg-[#F5F5F5] min-h-screen lg:pl-[275px] pt-[150px] rounded-lg shadow">
       {/* Header */}
       <div className="flex flex-col lg:flex-row justify-between items-center p-4 border-b w-full">
         <h1 className="text-[36px] font-bold text-[#052B4E]">Cash Request</h1>

@@ -13,7 +13,7 @@ type SubMenuItem = {
 
 type MenuItem = {
   name: string;
-  icon: string; // Changed to string for image source
+  icon: string; 
   path: string;
   subMenus?: SubMenuItem[];
 };
@@ -34,7 +34,7 @@ const DesktopSideNav = () => {
       icon: "operations.png",
       path: "/operations",
       subMenus: [
-        { name: "Cash Request", path: "/cash-request" },
+        { name: "Cash Request", path: "/order-and-delivery/cash-request" },
         { name: "Mutilated Notes", path: "/mutilated-notes" },
         { name: "Cash Evacuation", path: "/cash-evacuation" },
         { name: "Overages / Shortages", path: "/overages-shortages" },
@@ -92,7 +92,7 @@ const DesktopSideNav = () => {
   };
 
   return (
-    <aside className="hidden w-[270px] md:block overflow-scroll  bg-[#F5F5F5] fixed left-0 top-0 overflow-y-auto mt-[69px]">
+    <aside className="hidden bg-[#F5F5F5] min-h-screen w-[270px] md:block overflow-scroll   fixed left-0 top-0 overflow-y-auto mt-[69px]">
       <div className="flex flex-col h-full items-center w-full gap-[19.5px] pt-[50px] ">
         <nav>
           {menuItems.map((menuItem, index) => (
