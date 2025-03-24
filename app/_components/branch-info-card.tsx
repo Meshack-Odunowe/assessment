@@ -19,7 +19,7 @@ const BranchInfoCard: React.FC<BranchInfoCardProps> = ({
   imageUrl = "/house.png"
 }) => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col  w-full min-w-[351px]">
       {/* Header section with branch name and tier */}
       <div className="py-[16px] flex items-center bg-[#DBDFFD] gap-[16px] rounded-t-[10px]" style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
         <Image
@@ -29,7 +29,7 @@ const BranchInfoCard: React.FC<BranchInfoCardProps> = ({
           alt="Branch icon"
           className="ml-[28px]"
         />
-        <div className="pr-[53px]">
+        <div >
           <h3 className="font-[400] text-[#959595]">{tier}</h3>
           <p className="font-semibold text-lg">{branchName}</p>
         </div>

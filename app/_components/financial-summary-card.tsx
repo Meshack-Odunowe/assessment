@@ -25,8 +25,8 @@ const FinancialCard: React.FC<FinancialCardProps> = ({
   const isPositive = changePercentage >= 0;
   
   return (
-    <div className="bg-white  p-4  flex justify-between items-center rounded-[10px]  shadow-[box-shadow: 0px 1px 10px 0px #00000026;
-  ] shadow-md">
+    <div className="bg-white  p-[12px]  flex justify-between items-center rounded-[10px] 
+  ] " style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
       <div className="flex  items-center gap-4">
         {iconSrc ? (
           <div 
@@ -60,7 +60,7 @@ const FinancialCard: React.FC<FinancialCardProps> = ({
             <span className={`${isPositive ? 'text-[#098A16] font-[500]' : 'text-[#E5000E]'} font-medium`}>
               {isPositive ? '▲' : '▼'} {isPositive ? '+' : ''}{changePercentage}%
             </span>
-            <span className="text-[#959595] text-sm italic">
+            <span className="text-[#959595] text-[13px] italic">
               {changeDescription}
             </span>
           </div>
@@ -77,7 +77,7 @@ const FinancialCard: React.FC<FinancialCardProps> = ({
 
 const FinancialSummaryCards: React.FC = () => {
   return (
-    <div className="space-y-4">
+    <div className=" min-w-[416px] flex flex-col gap-[16px] py-[12px]">
       <FinancialCard
         title="Cash Withdrawal"
         amount="117,420,000"

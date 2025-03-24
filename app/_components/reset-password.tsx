@@ -77,7 +77,7 @@ const ResetPassword: React.FC = () => {
               onChange={handlePasswordChange}
             />
             <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
-              <Image src="lock.svg" width={20} height={20} alt="padlock" />
+              <Image src="/lock.svg" width={20} height={20} alt="padlock" />
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ const ResetPassword: React.FC = () => {
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
             <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
-              <Image src="lock.svg" width={20} height={20} alt="padlock" />
+              <Image src="/lock.svg" width={20} height={20} alt="padlock" />
             </div>
           </div>
         </div>

@@ -72,7 +72,7 @@ export default function LoginForm() {
               </label>
               <div className="relative">
                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                  <Image src="lock.svg" width={20} height={20} alt="padlock" />
+                  <Image src="/lock.svg" width={20} height={20} alt="padlock" />
                 </div>
                 <input
                   id="password"
