@@ -3,6 +3,7 @@ import "./globals.css";
 import SideNav from "../_components/sidenav";
 import DesktopSideNav from "../_components/desktop-sidebar";
 import Navbar from "../_components/navbar";
+import { SidebarProvider } from "../context/SidebarContextProvider";
 
 
 export const metadata: Metadata = {
@@ -20,10 +21,12 @@ export default function RootLayout({
   // };
 
   return (
+        <SidebarProvider>
     <html lang="en">
       <body
         className={` min-h-screen    `}
       >
+
         <Navbar
           // toggleSidebar={handleToggleSidebar}
         />
@@ -32,5 +35,7 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+    </SidebarProvider>
+
   );
 }

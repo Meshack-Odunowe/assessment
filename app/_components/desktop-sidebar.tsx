@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from 'next/image';
+import { useSidebar } from "../context/SidebarContextProvider";
 
 type SubMenuItem = {
   name: string;
@@ -21,6 +22,7 @@ type MenuItem = {
 const DesktopSideNav = () => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>("Operations");
   const pathname = usePathname();
+  const { isSidebarOpen } = useSidebar();
 
   // Menu items array with icons as image paths
   const menuItems: MenuItem[] = [
@@ -85,6 +87,7 @@ const DesktopSideNav = () => {
       setOpenSubMenu(menuName);
     }
   };
+  
 
   // Check if path is active
   const isPathActive = (path: string) => {
@@ -92,9 +95,14 @@ const DesktopSideNav = () => {
   };
 
   return (
-    <aside className="hidden bg-[#F5F5F5] min-h-screen w-[270px] md:block overflow-scroll   fixed left-0 top-0 overflow-y-auto mt-[69px]">
-      <div className="flex flex-col h-full items-center w-full gap-[19.5px] pt-[50px] ">
-        <nav>
+    <aside 
+      className={cn(
+        "bg-[#F5F5F5] min-h-screen w-[270px] md:block fixed left-0 top-0 overflow-y-auto mt-[69px] transition-transform duration-300 ease-in-out z-20",
+        isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+      )}
+    >
+      <div className="flex flex-col h-full items-center w-full gap-[19.5px] pt-[50px]">
+        <nav className="w-full">
           {menuItems.map((menuItem, index) => (
             <div key={index} className="mb-[5px] w-full">
               {/* Main menu item */}
