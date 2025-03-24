@@ -23,7 +23,7 @@ const ControlTower = () => {
     ];
   
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#F5F5F5]">
       <div className="pl-[28px] pt-[64px] pr-[28px]">
         <div className="mb-6">
           <h2 className="text-[36px] font-[700] text-gray-800">

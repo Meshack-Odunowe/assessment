@@ -33,7 +33,7 @@ const ATMDashboard = ({
     data: Array<{ name: string; value: number; color: string }>;
   }
   const StatusCard = ({ title, data }: StatusCardProps) => (
-    <div className="flex-1 border rounded-lg p-4 ">
+    <div className="flex-1 border rounded-[10px] p-4 ">
       <h3 className="font-bold text-[12px] mb-4">{title}</h3>
       <div className="flex">
         <div className="relative w-32 h-32">
@@ -74,7 +74,7 @@ const ATMDashboard = ({
 
   return (
     <div className=" flex gap-[19px]">
-      <div className="bg-white rounded-lg shadow-md p-6 ">
+      <div className="bg-white rounded-[10px] shadow-md p-6 " style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
         <h2 className="text-[20px] font-[500] mb-[8px]">Current ATM Balance</h2>
 
         <div className="text-[32px] font-bold mb-6">{balance}</div>

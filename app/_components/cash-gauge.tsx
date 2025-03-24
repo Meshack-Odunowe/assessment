@@ -15,7 +15,7 @@ const CashGauge = ({
   const needleAngle = -90 + (percentage * 180 / 100);
   
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 max-w-sm">
+    <div className="bg-white rounded-[10px]  p-6 max-w-sm" style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
       <div className="text-center mb-2 font-semibold text-xl">{label}</div>
       
       {/* Custom SVG gauge */}
