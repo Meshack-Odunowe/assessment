@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SideNav from "../_components/sidenav";
+
 import DesktopSideNav from "../_components/desktop-sidebar";
 import Navbar from "../_components/navbar";
 import { SidebarProvider } from "../context/SidebarContextProvider";
@@ -16,9 +16,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const handleToggleSidebar = () => {
-  
-  // };
+ 
 
   return (
         <SidebarProvider>
@@ -28,9 +26,9 @@ export default function RootLayout({
       >
 
         <Navbar
-          // toggleSidebar={handleToggleSidebar}
+          
         />
-        <SideNav />
+       
         <DesktopSideNav/>
         {children}
       </body>

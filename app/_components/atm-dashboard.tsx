@@ -73,7 +73,7 @@ const ATMDashboard = ({
   );
 
   return (
-    <div className=" flex flex-col mx-auto justify-center items-center lg:flex-row gap-[19px]">
+    <div className=" flex flex-col  lg:flex-row gap-[19px]">
       <div className="bg-white rounded-[10px] shadow-md p-6 " style={{ boxShadow: "0px 1px 10px 0px rgba(0, 0, 0, 0.15)" }}>
         <h2 className="text-[20px] font-[500] mb-[8px]">Current ATM Balance</h2>
 

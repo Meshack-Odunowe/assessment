@@ -23,7 +23,7 @@ const ControlTower = () => {
     ];
   
   return (
-    <div className="min-h-screen mx-[24px]   bg-[#F5F5F5]">
+    <div className="min-h-screen  mx-[28px]   bg-[#F5F5F5]">
       <div className=" pt-[64px] ">
         <div className="mb-6">
           <h2 className="text-[36px] font-[700] text-gray-800">
@@ -31,9 +31,9 @@ const ControlTower = () => {
           </h2>
         </div>
 
-        <div className="flex  flex-col lg:flex-row  gap-[13px] ">
+        <div className="flex w-full flex-col lg:flex-row gap-[13px] ">
           {/* Branch Information Card */}
-          <div className="h-full">
+          <div className="h-full flex-1">
             <BranchInfoCard
               tier="Tier 2"
               branchName="Opebi Road"
@@ -44,12 +44,12 @@ const ControlTower = () => {
           </div>
 
           {/* Financial Summary Cards */}
-          <div className="h-full">
+          <div className="h-full flex-1">
             <FinancialSummaryCards />
           </div>
 
           {/* Cash Position Card */}
-          <div className="h-full">
+          <div className="h-full flex-1">
             <CashPositionCard
               cashPosition="₦620,510,000"
               changePercentage={2.5}
