@@ -31,7 +31,7 @@ const ControlTower = () => {
           </h2>
         </div>
 
-        <div className="flex w-full flex-col lg:flex-row gap-[13px] ">
+        <div className=" w-full grid grid-cols-1 lg:grid lg:grid-cols-3 gap-[13px] ">
           {/* Branch Information Card */}
           <div className="h-full flex-1">
             <BranchInfoCard
@@ -69,7 +69,7 @@ const ControlTower = () => {
       ))}
     </div>
       </div>
-      <div className="pt-6 flex items-end">
+      <div className="pt-[42.5px] flex items-end">
       <ATMDashboard 
       balance="₦420,000,000,000" 
       currencySymbol="$"
