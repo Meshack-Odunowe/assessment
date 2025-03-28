@@ -7,13 +7,11 @@ import React, {
   ReactNode 
 } from 'react';
 
-// Define the type for the context
 type SidebarContextType = {
   isSidebarOpen: boolean;
   toggleSidebar: () => void;
 };
 
-// Create the context with a default value
 const SidebarContext = createContext<SidebarContextType>({
   isSidebarOpen: false,
   toggleSidebar: () => {}

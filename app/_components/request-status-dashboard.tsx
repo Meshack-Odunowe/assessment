@@ -99,7 +99,7 @@ const RequestStatusDashboard: React.FC = () => {
   };
 
   return (
-    <section className="p-6 pl-0 bg-[#F5F5F5]">
+    <section className="mt-[40px]  bg-[#F5F5F5]">
       <h1 className="text-[20px] font-[500] mb-[16px]"> Approved Request Status</h1>
       
       {/* Filters */}
